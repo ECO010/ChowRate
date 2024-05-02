@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_light_background"
+    android:orientation="vertical"
+    tools:context=".ui.activities.PhotoReviewActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_theme_light_primary">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:text="@string/photo_review"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textSize="24sp" />
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/food_pic1" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/food_pic2" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/food_pic3" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/food_pic4" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/straight_edit_text_background"
+            android:ems="10"
+            android:hint="@string/prompt_picture_description"
+            android:inputType="textMultiLine"
+            android:minEms="70"
+            android:minLines="2"
+            android:textColor="@color/md_theme_light_onBackground"
+            android:textColorHint="@color/md_theme_light_secondary"
+            android:textSize="16sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/characterCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:text="@string/character_count_written_review"
+        app:drawableLeftCompat="@drawable/baseline_edit_note_24"
+        app:drawableTint="@color/md_theme_light_secondary" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:drawableTint="@color/md_theme_light_secondary"
+        android:hint="@string/location_hint"
+        android:padding="10dp"
+        android:textColor="@color/md_theme_light_onBackground"
+        android:textColorHint="@color/md_theme_light_secondary"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/locationDropdown"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textViewRateExperience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:text="@string/rate_your_experience"
+        android:textColor="@color/md_theme_light_onBackground" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/md_theme_light_primary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/writeReviewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/action_submit_review"
+        android:textAllCaps="true" />
+</androidx.appcompat.widget.LinearLayoutCompat>

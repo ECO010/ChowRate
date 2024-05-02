@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/restaurantItemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false">
+
+        <ImageView
+            android:id="@+id/restaurantImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food_pic1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/restaurantName"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="$$RestaurantName$$"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantImage" />
+
+        <RatingBar
+            android:id="@+id/restaurantRating"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_below="@id/restaurantName"
+            android:layout_gravity="start"
+            android:clickable="false"
+            android:layoutDirection="ltr"
+            android:numStars="5"
+            android:rating="3.5"
+            android:stepSize="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantName" />
+
+        <TextView
+            android:id="@+id/priceRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="££££"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantRating" />
+
+   <!--     <ImageView
+            android:id="@+id/floatingForwardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/restaurantImage"
+            android:layout_alignEnd="@id/restaurantImage"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            android:tooltipText="Save to favorites"
+            app:layout_constraintBottom_toBottomOf="@+id/priceRange"
+            app:layout_constraintEnd_toEndOf="@id/restaurantImage"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toEndOf="@+id/restaurantRating"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantImage"
+            app:layout_constraintVertical_bias="0.672"
+            app:tint="@color/md_theme_light_primary" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

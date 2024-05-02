@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Chow Rate</string>
+    <string name="slogan">Helping you make informed dining choices</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_username_email">Username or Email</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_retype_password">Re-type Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="action_register">Register</string>
+    <string name="prompt_dont_have_account">Don\'t have an account?</string>
+    <string name="prompt_already_have_account">Already have an account?</string>
+    <string name="written_review">Written Review</string>
+    <string name="photo_review">Review With Photo(s)</string>
+    <string name="prompt_experience">Tell us more about your experience</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="action_continue_as_guest">Continue as Guest</string>
+    <string name="welcome">"Welcome Back!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="action_submit_review">Submit Review</string>
+    <string name="character_count_written_review">0/100</string>
+    <string name="location_hint">Add a location</string>
+    <string name="permissions_dialog_title">Permission Required</string>
+    <string name="dialog_button">OK</string>
+    <string name="location_dialog_message">"Chow Rate requires location access to provide accurate restaurant recommendations. Please grant location access."</string>
+    <string name="rate_your_experience">Rate Your Experience by tapping on the bar below</string>
+    <string name="prompt_picture_description">Tell us a little bit about your pictures.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_restaurant_overview">RestaurantOverviewActivity</string>
+</resources>

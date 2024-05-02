@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1077746003878",
+    "project_id": "chowrate",
+    "storage_bucket": "chowrate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077746003878:android:7271558c79d8fcae27e967",
+        "android_client_info": {
+          "package_name": "com.example.chowrate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2BzjwL4S7bBWHGL_frfv-QFEnAUp5-PE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
